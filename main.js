@@ -7,7 +7,7 @@ function myhands(num) {
     console.log(win_count);
 
     //結果 (win,lose,draw)
-    var result = "draw!もう一回！"
+    var result = "draw!もう一回！";
 
     if (num === 0) {
         if (rand === 1) {
