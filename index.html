@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>じゃんけんゲーム</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <p>じゃんけんゲーム開始</p>
+    <p>現在、<input type="number" id="win_count" value="0" readonly></p>連勝中!</p>
+    <p>じゃんけんマスターになろう！！</p>
+    <p>どれか入力してください</p>
+    <p>最初はグー、じゃんけん！</p>
+    <img src="https://2.bp.blogspot.com/-R9fygJI7KIQ/Uab3zOD7QYI/AAAAAAAAUVM/9yTg0fPAsYo/s800/janken_boys.png">
+
+    <form name="my hand">
+
+        <input type="button" name="goo" value="グー" onclick="myhands(0)">
+        <img src="http://lmsnn.fc2web.com/material/M-j_gu01.png">
+        <input type="button" name="choki" value="チョキ" onclick="myhands(1)">
+        <img src="http://lmsnn.fc2web.com/material/M-j_ch01.png">
+        <input type="button" name="par" value="パー" onclick="myhands(2)">
+        <img src="http://lmsnn.fc2web.com/material/M-j_pa01.png">
+    </form>
+
+
+
+    <div id="result" style="display: none;">
+        <p>相手の手は</p>
+        <form id="target">
+            <div id='radio_0' style="display: none;">
+                <input name="hoge" type="radio" value="0"> グ
+                <img src="http://lmsnn.fc2web.com/material/M-j_gu01.png">
+            </div>
+
+            <div id='radio_1' style="display: none;">
+                <input name="hoge" type="radio" value="1"> チ
+                <img src="http://lmsnn.fc2web.com/material/M-j_ch01.png">
+            </div>
+
+            <div id='radio_2' style="display: none;">
+                <input name="hoge" type="radio" value="2"> パ
+                <img src="http://lmsnn.fc2web.com/material/M-j_pa01.png">
+            </div>
+        </form>
+        <p>でした！</p>
+</body>
+
+</html>
