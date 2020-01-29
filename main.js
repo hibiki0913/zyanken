@@ -7,7 +7,7 @@ function myhands(num) {
     console.log(win_count);
 
     //結果 (win,lose,draw)
-    var result = "draw!もう一回！";
+    var result="draw!もう一回！"
 
     if (num === 0) {
         if (rand === 1) {
@@ -29,7 +29,7 @@ function myhands(num) {
         }
     }
 
-    if(result == "win!おめでとうございます！"){
+    if(result === "win!おめでとうございます！"){
         win_count++;
     }else{
         win_count = 0;
@@ -41,8 +41,8 @@ function myhands(num) {
     elements[rand].checked = true;
     document.getElementById('result').style.display = 'inline';
 
-    if (result == "draw!もう一回！") {
-        if (num == 0) {
+    if (result === "draw!もう一回！") {
+        if (num === 0) {
             document.getElementById('radio_0').style.display = 'inline';
             document.getElementById('radio_1').style.display = 'none';
             document.getElementById('radio_2').style.display = 'none';
